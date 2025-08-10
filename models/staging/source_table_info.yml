@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: source_info
+    database: DBT_TRAINING
+    schema: DBT_KMAHESHWARI
+    tables:
+        - name: employee_table
