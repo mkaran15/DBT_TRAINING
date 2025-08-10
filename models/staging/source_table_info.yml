@@ -6,3 +6,12 @@ sources:
     schema: DBT_KMAHESHWARI
     tables:
         - name: employee_table
+    loaded_at_field: insert_date
+    freshness: 
+      error_after:
+        count: 48
+        period: hour
+      warn_after:
+        count: 24
+        period: hour
+    
