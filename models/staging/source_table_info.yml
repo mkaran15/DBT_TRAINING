@@ -5,13 +5,17 @@ sources:
     database: DBT_TRAINING
     schema: DBT_KMAHESHWARI
     tables:
-        - name: employee_table
+      - name: employee_table
+        columns:
+          - name: emp_id
+            tests:
+              - unique
+              - not_null
     loaded_at_field: insert_date
-    freshness: 
+    freshness:
       error_after:
         count: 48
         period: hour
       warn_after:
         count: 24
         period: hour
-    
